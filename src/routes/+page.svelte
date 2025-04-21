@@ -1,0 +1,48 @@
+<script>
+	import Kirby from "$lib/kirby.svelte";
+
+	let kirbyCount = $state(0);
+
+	function Increment() {
+		kirbyCount++;
+	}
+
+	const backgrounds = [
+		"bg-gray-800",
+		"bg-pink-300",
+		"bg-linear-65 from-purple-500 to-pink-500",
+		"bg-linear-65 from-yellow-300 to-emerald-600",
+	];
+
+	let currentBackground = $state(backgrounds[0]);
+</script>
+
+<div
+	id="container"
+	class="{currentBackground} text-white flex flex-col min-h-screen items-center justify-center gap-5 transition delay-200"
+>
+	<h1 class="text-4xl text-center m-10">hi</h1>
+
+	<Kirby />
+
+	<button
+		onclick={Increment}
+		class="bg-blue-500 p-2 transition rounded-md hover:cursor-pointer active:scale-90"
+	>
+		Click me!
+	</button>
+
+	<span id="kirbys">Click Count: {kirbyCount}</span>
+
+	<h1 class="text-2xl">Backgrounds</h1>
+
+	<div class="flex items-center justify-center flex-wrap gap-5">
+		{#each backgrounds as bg}
+			<button
+				aria-label={bg}
+				class="background h-20 w-40 bg-linear-65 {bg} rounded-md cursor-pointer"
+				onclick={() => (currentBackground = bg)}
+			></button>
+		{/each}
+	</div>
+</div>
