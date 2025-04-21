@@ -7,8 +7,7 @@
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
-		"prepare": "svelte-kit sync || echo ''",
-		"deploy": "vite build && npx gh-pages -d build"
+		"prepare": "svelte-kit sync || echo ''"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^4.0.0",
