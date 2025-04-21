@@ -2,6 +2,8 @@
 	import Kirby from "$lib/kirby.svelte";
 	import ClickButton from "$lib/clickButton.svelte";
 
+	const version = "1.1.0";
+
 	const backgrounds = [
 		"bg-gray-800",
 		"bg-pink-300",
@@ -16,7 +18,7 @@
 	id="container"
 	class="{currentBackground} text-white flex flex-col min-h-screen items-center justify-center gap-5 transition delay-200"
 >
-	<h1 class="text-4xl text-center m-10">hi</h1>
+	<h1 class="text-4xl text-center m-10">hi | v{version}</h1>
 
 	<Kirby />
 
