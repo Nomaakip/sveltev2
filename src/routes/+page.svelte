@@ -3,7 +3,7 @@
 	import ClickButton from "$lib/clickButton.svelte";
 	import Greet from "$lib/greet.svelte";
 
-	const version = "1.1.5";
+	const version = "1.1.6";
 
 	const backgrounds = [
 		"bg-gray-800",
@@ -14,6 +14,11 @@
 
 	let currentBackground = $state(backgrounds[0]);
 </script>
+
+<svelte:head>
+	<title>welcome</title>
+	<meta name="description" content="hell yeah" />
+</svelte:head>
 
 <div
 	id="container"
