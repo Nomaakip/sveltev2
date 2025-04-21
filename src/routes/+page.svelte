@@ -1,8 +1,9 @@
 <script>
 	import Kirby from "$lib/kirby.svelte";
 	import ClickButton from "$lib/clickButton.svelte";
+	import Greet from "$lib/greet.svelte";
 
-	const version = "1.1.0";
+	const version = "1.1.5";
 
 	const backgrounds = [
 		"bg-gray-800",
@@ -18,7 +19,7 @@
 	id="container"
 	class="{currentBackground} text-white flex flex-col min-h-screen items-center justify-center gap-5 transition delay-200"
 >
-	<h1 class="text-4xl text-center m-10">hi | v{version}</h1>
+	<Greet {version} />
 
 	<Kirby />
 
