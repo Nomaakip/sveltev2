@@ -1,16 +1,11 @@
 <script>
 	import Kirby from "$lib/kirby.svelte";
-
-	let kirbyCount = $state(0);
-
-	function Increment() {
-		kirbyCount++;
-	}
+	import ClickButton from "$lib/clickButton.svelte";
 
 	const backgrounds = [
 		"bg-gray-800",
 		"bg-pink-300",
-		"bg-linear-65 from-purple-500 to-pink-500",
+		"bg-linear-65 from-red-500 to-pink-500",
 		"bg-linear-65 from-yellow-300 to-emerald-600",
 	];
 
@@ -25,14 +20,7 @@
 
 	<Kirby />
 
-	<button
-		onclick={Increment}
-		class="bg-blue-500 p-2 transition rounded-md hover:cursor-pointer active:scale-90"
-	>
-		Click me!
-	</button>
-
-	<span id="kirbys">Click Count: {kirbyCount}</span>
+	<ClickButton />
 
 	<h1 class="text-2xl">Backgrounds</h1>
 
