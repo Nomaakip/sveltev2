@@ -2,6 +2,7 @@
 	import Kirby from "$lib/kirby.svelte";
 	import ClickButton from "$lib/clickButton.svelte";
 	import Greet from "$lib/greet.svelte";
+	import Head from "$lib/head.svelte";
 
 	const version = "1.1.6";
 
@@ -13,12 +14,14 @@
 	];
 
 	let currentBackground = $state(backgrounds[0]);
+
+	let headConfig = {
+		title: 'welcome',
+		content: 'hell yeah'
+	}
 </script>
 
-<svelte:head>
-	<title>welcome</title>
-	<meta name="description" content="hell yeah" />
-</svelte:head>
+<Head {...headConfig}/>
 
 <div
 	id="container"
