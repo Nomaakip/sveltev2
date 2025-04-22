@@ -17,7 +17,7 @@
 
 	let headConfig = {
 		title: 'welcome',
-		content: 'hell yeah'
+		content: 'hell yeah test lol'
 	}
 </script>
 
