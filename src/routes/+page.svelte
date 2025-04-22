@@ -4,7 +4,7 @@
 	import Greet from "$lib/greet.svelte";
 	import Head from "$lib/head.svelte";
 
-	const version = "1.1.7-beta_vercel2";
+	const version = "1.1.8";
 
 	const backgrounds = [
 		"bg-gray-800",
@@ -34,7 +34,6 @@
 	<ClickButton />
 
 	<h1 class="text-2xl">Backgrounds</h1>
-
 	<div class="flex items-center justify-center flex-wrap gap-5">
 		{#each backgrounds as bg}
 			<button
