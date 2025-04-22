@@ -4,7 +4,7 @@
 	import Greet from "$lib/greet.svelte";
 	import Head from "$lib/head.svelte";
 
-	const version = "1.1.6";
+	const version = "1.1.7-beta_vercel1";
 
 	const backgrounds = [
 		"bg-gray-800",
