@@ -21,7 +21,7 @@
 	}
 </script>
 
-<Head {...headConfig}/>
+<Head title={headConfig.title} content={headConfig.content}/>
 
 <div
 	id="container"
