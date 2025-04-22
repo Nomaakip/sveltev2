@@ -17,11 +17,11 @@
 
 	let headConfig = {
 		title: 'welcome',
-		content: 'hell yeah test lol'
+		content: 'hell yeah test lol aa beta2'
 	}
 </script>
 
-<Head title={headConfig.title} content={headConfig.content}/>
+<Head {...headConfig}/>
 
 <div
 	id="container"
