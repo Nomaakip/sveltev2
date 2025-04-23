@@ -5,7 +5,7 @@
   import Head from "$lib/head.svelte";
   import Warning from "$lib/warning.svelte";
 
-  const version = "1.2.0-beta_vercel1";
+  const version = "1.2.0-beta_vercel2";
 
   const backgrounds = [
     "bg-gray-800",
